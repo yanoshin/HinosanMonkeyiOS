@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EA974BA1B052D69001A9811"
-               BuildableName = "HinoMonkey.app"
-               BlueprintName = "HinoMonkey"
-               ReferencedContainer = "container:HinoMonkey.xcodeproj">
+               BlueprintIdentifier = "E91E548D19C8F2750071D7C9"
+               BuildableName = "libKonashi.a"
+               BlueprintName = "Konashi"
+               ReferencedContainer = "container:Konashi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EA974D31B052D69001A9811"
-               BuildableName = "HinoMonkeyTests.xctest"
-               BlueprintName = "HinoMonkeyTests"
-               ReferencedContainer = "container:HinoMonkey.xcodeproj">
+               BlueprintIdentifier = "E91E549D19C8F2750071D7C9"
+               BuildableName = "KonashiTests.xctest"
+               BlueprintName = "KonashiTests"
+               ReferencedContainer = "container:Konashi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EA974D31B052D69001A9811"
-               BuildableName = "HinoMonkeyTests.xctest"
-               BlueprintName = "HinoMonkeyTests"
-               ReferencedContainer = "container:HinoMonkey.xcodeproj">
+               BlueprintIdentifier = "E91E549D19C8F2750071D7C9"
+               BuildableName = "KonashiTests.xctest"
+               BlueprintName = "KonashiTests"
+               ReferencedContainer = "container:Konashi.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EA974BA1B052D69001A9811"
-            BuildableName = "HinoMonkey.app"
-            BlueprintName = "HinoMonkey"
-            ReferencedContainer = "container:HinoMonkey.xcodeproj">
+            BlueprintIdentifier = "E91E548D19C8F2750071D7C9"
+            BuildableName = "libKonashi.a"
+            BlueprintName = "Konashi"
+            ReferencedContainer = "container:Konashi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,16 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EA974BA1B052D69001A9811"
-            BuildableName = "HinoMonkey.app"
-            BlueprintName = "HinoMonkey"
-            ReferencedContainer = "container:HinoMonkey.xcodeproj">
+            BlueprintIdentifier = "E91E548D19C8F2750071D7C9"
+            BuildableName = "libKonashi.a"
+            BlueprintName = "Konashi"
+            ReferencedContainer = "container:Konashi.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EA974BA1B052D69001A9811"
-            BuildableName = "HinoMonkey.app"
-            BlueprintName = "HinoMonkey"
-            ReferencedContainer = "container:HinoMonkey.xcodeproj">
+            BlueprintIdentifier = "E91E548D19C8F2750071D7C9"
+            BuildableName = "libKonashi.a"
+            BlueprintName = "Konashi"
+            ReferencedContainer = "container:Konashi.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

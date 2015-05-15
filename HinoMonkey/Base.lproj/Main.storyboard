@@ -1,25 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d2-1y-K2A">
+                                <rect key="frame" x="16" y="61" width="288" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="P7N-Og-XxA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="19"/>
+                                <state key="normal" title="サルと接続する" backgroundImage="btn_off.png"/>
+                                <state key="highlighted" backgroundImage="btn_on.png"/>
+                                <connections>
+                                    <action selector="find:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JVx-dR-z9k"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-Yn-YTY">
+                                <rect key="frame" x="67" y="142" width="171" height="283"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY0-m7-tv3">
+                                <rect key="frame" x="16" y="463" width="288" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="1jA-Yd-rUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <state key="normal" title="首を振る！！！" backgroundImage="btn_off.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_on.png"/>
+                                <connections>
+                                    <action selector="doShake:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HLS-Ou-Yse"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6d2-1y-K2A" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7Gk-pH-fil"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mvd-Yn-YTY" secondAttribute="trailing" constant="66" id="8Qz-3w-W0h"/>
+                            <constraint firstItem="CY0-m7-tv3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MgN-2A-556"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CY0-m7-tv3" secondAttribute="bottom" constant="68" id="WWG-Fo-BzW"/>
+                            <constraint firstItem="Mvd-Yn-YTY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="51" id="dmC-gv-UOG"/>
+                            <constraint firstItem="6d2-1y-K2A" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="41" id="hHv-Ww-bdF"/>
+                            <constraint firstItem="CY0-m7-tv3" firstAttribute="leading" secondItem="6d2-1y-K2A" secondAttribute="leading" id="k1S-V0-j8X"/>
+                            <constraint firstItem="6d2-1y-K2A" firstAttribute="trailing" secondItem="CY0-m7-tv3" secondAttribute="trailing" id="ms0-KZ-gAv"/>
+                            <constraint firstItem="Mvd-Yn-YTY" firstAttribute="top" secondItem="6d2-1y-K2A" secondAttribute="bottom" constant="44" id="q4D-4M-Py1"/>
+                            <constraint firstItem="CY0-m7-tv3" firstAttribute="top" secondItem="Mvd-Yn-YTY" secondAttribute="bottom" constant="38" id="vMx-gx-w7J"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="doConnectBtn" destination="6d2-1y-K2A" id="Rvo-zh-wgk"/>
+                        <outlet property="doShakeBtn" destination="CY0-m7-tv3" id="P8Z-ie-mJ4"/>
+                        <outlet property="monkeyImageView" destination="Mvd-Yn-YTY" id="cwr-l3-fY4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_off.png" width="303" height="37"/>
+        <image name="btn_on.png" width="303" height="37"/>
+        <image name="monkey_image.png" width="407" height="620"/>
+    </resources>
 </document>
